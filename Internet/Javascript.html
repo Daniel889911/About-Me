@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CITS3403 Project #1</title>
+    <link rel="stylesheet" type="text/css" href="CSS Styles.CSS">
+    <script type="text/javascript" src="Javascript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body style="background-color: lightcyan ">
+
+<!--This is a Bootstrap Jumbotron navigator bar with drop down menus that are fully responsive-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">HOME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="navbar-brand" href="HTML.html">HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="CSS Page.html">CSS<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../index.html" tabindex="-1" aria-disabled="true">About Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="index.html">HOME</a>
+            <a class="dropdown-item" href="HTML.html">HTML</a>
+            <a class="dropdown-item" href="CSS Page.html">CSS</a>
+            <a class="dropdown-item" href="../index.html">About Me</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div style="margin-top: 70px; text-align:center;">    
+    <img src="IMAGES/JAVASCRIPT.png" alt="JAVASCRIPT Image" style="width:128px;height:128px;">
+    </div>
+
+  <h1 style="text-align:center;">Purpose And Evolution Of Javascript</h1>
+  <h2>1.0 History</h2>
+    <p>Javascript was first developed in 1995 by Brendan Eich working for Netscape. It was inspired from Java, Scheme, and Self programming languages.</p>
+    <p>Javascript is a core technology for internet webpages and is used to provide client side web page behaviour. It enables the website to interact and respond to users actions and gives the website a more dynamic and interactive feel to it. All major web browsers have a dedicated javascript engine that can compile javascript. ECMAScript is the official name for Javascript and below is a summary of the version histories condensed from the <a class="navbar-brand" href="https://www.w3schools.com/js/js_versions.asp">W3C website</a>.</p>
+    <p style="text-align:center;" ><strong>ECMAScript Version History Table</strong>  </p>
+
+<!--This is a table in Javascript which has an unordered list of list items inside of it-->
+<div class="table">
+  <table >
+      <tr>
+      <th style="text-align: center;">ECMAScript Version Number</th>
+      <th style="text-align: center;vertical-align: middle;">Features</th>                                  
+      </tr>
+      <tr>
+      <td style="text-align: center;">ECMAScript 1<br>1997</td>
+      <td>
+          <ul>
+              <li>
+                  First edition
+              </li>              
+          </ul>
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">ECMAScript 5 <br>2009</td>
+      <td>
+          <ul>              
+              <li>
+                  Added JSON support, String.trim() , Array.isArray(), and Array iteration methods
+              </li>              
+          </ul>
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">ECMAScript 8 <br>2017</td>
+      <td>
+          <ul>
+              <li>
+                  Added string padding, new object properties, Async functions, and shared memory
+              </li>              
+          </ul>
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">ECMAScript 9 <br>2018-current</td>
+      <td>
+          <ul>
+              <li>
+                  Added Asynchronous iteration, Promise.finally(), RegExp, and rest/ spread properties 
+              </li>                         
+          </ul>
+      </td>
+      </tr>   
+      
+  </table>
+</div>
+
+    <h2>2.0 Features </h2>
+    <p>Javascript is a high level, imperative, and structured scripting language that uses just in time compilation. Javascript is weakly typed and variables are implicitly cast depending upon the syntax when the type is used. Regular expressions are also supported in the javascript runtime environment.  </p>
+    <p>Javascript uses a prototype style of object oriented programming. Prototype objects are able to make new instances of themselves which are mutable giving them the ability to create new prototype objects with new fields and methods. The prototype objects inherit from their parent objects without the use of classes. </p>
+    <p>A function in javascript is considered to be first class, that is it is considered as an object and will have properties and methods associated. Functions are also constructors and prefixing a function with the syntax new will create an instance of the named prototype inheriting properties and methods from the constructor. </p>
+    <p>Javascript processes messages passed between objects and places them in a queue. When the message is processed its function is called creating a stack frame of the functions arguments and local variables. The call stack uses memory as required and when the function has completed the next message in the queue is processed on the call stack. Messages are processed to completion and this is called the event loop and as javascript processes concurrently, the event loop is non blocking, this is achieved through an input/ output system that uses events and callback functions so that other messages can be processed while waiting for an event to happen which initiates when the callback function is ready for message passing. </p>
+    <p>Promises are a feature of javascript that allow for asynchronous operations. Promises are a built in object that comes with handlers that return back the results of the promise whether it was successful or failed. The returned results from the promise do not have to happen immediately but until the promise's function event has completed, so the promise guarantees to return the result sometime in the future.  </p>
+
+    <h2>3.0 Asynchronous Programming Styles</h2>
+    <p>Unlike other programming environments where each program follows a certain sequence in a predictable way, the web browser environment responds to events that happen that are not predictable. For example the web browser maybe waiting for a mouse click event that may never happen or waiting for a fetch() or XHR request and the server takes a long time to respond or does not respond at all. In order to allow it to continue to process other computations while waiting for an event to happen the web browser uses asynchronous programming concepts. There are  two main styles of asynchronous programming styles in javascipt, an older style named callbacks and a newer style called promises.</p>
+    <h3>3.1 Asynchronous Callbacks</h3>
+    <p> The most common form of an async callback function is the addEventListener function : </p>
+
+<!-- This dynamically adjusts the size for medium and small screens-->
+  <div class="row">
+    <div class ="col-md-3 col-sm-2" >
+    </div>
+    <div class ="col-md-4 col-sm-6">
+      <p><span style="background-color:yellow";>btn.addEventListener('click', nextItem);</span></p>
+    </div>
+  </div>
+
+    <p>The addEventListener function has two arguments, one of the event which is the ‘click’ and another callback function which is executed once the ‘click’ event has happened. Since the callback function is an argument to the addEventListener function, it is not executed straightaway and it is internally coded by the addEventListener to execute only when the event ‘click’ has happened, in pseudocode this is :  </p>
+
+<!-- This dynamically adjusts the size for medium and small screens-->
+  <div class="row">
+    <div class ="col-md-3 col-sm-2" >
+    </div>
+    <div class ="col-md-4 col-sm-6">
+      <p>If (event ‘click’) then callback function,</p>
+      <p>Else continue loop to poll ‘click’ event </p>
+    </div>
+  </div>
+
+    <h3>3.2 Asynchronous Promises</h3>
+    <p>Promises is the new style of async coding with the common example the fetch() API : </p>
+
+<!-- This dynamically adjusts the size for medium and small screens-->
+  <div class="row">
+    <div class ="col-md-3 col-sm-2" >
+    </div>
+    <div class ="col-md-4 col-sm-6">
+    <p><span style="background-color:yellow";>fetch(url).then(function(data) {</span></p>
+    <p>&emsp; <span style="background-color:yellow";>return data.json(); });</span></p>
+    </div>
+  </div>
+
+    <p>The fetch() API takes a url of the server as an argument and returns a promise object. The promise object is the result of whether the request to the server was successful or not. The promise object then has two possible scenarios for the result of the event, which are provided in two methods for the object.  </p>
+
+<!-- This dynamically adjusts the size for medium and small screens-->
+  <div class="row">
+    <div class ="col-md-3 col-sm-2" >
+    </div>
+    <div class ="col-md-6 col-sm-6" style="font-size: 1.5em;">
+      <ul > 
+        <li>The .then method executes code if the promise object request was successful i.e. data was retrieved from the server</li>
+        <li>The .catch method executes code if the promise object request was unsuccessful i.e. data could not be retrieved from the server </li>
+      </ul>
+    </div>
+  </div>
+
+    <p>Multiple asynchronous events can be chained one after the other as shown below :  </p>
+<!-- This dynamically adjusts the size for medium and small screens-->
+  <div class="row">
+    <div class ="col-md-3 col-sm-2" >
+    </div>  
+    <div class ="col-md-6 col-sm-6" style="font-size: 1.0em;">
+    <p><span style="background-color:yellow";>fetch(url).then(function(response) {</span></p>
+    <p style="padding-left: 100px;"><span style="background-color:yellow";>return response.json() })</span></p>
+    <p style="padding-left: 100px;"><span style="background-color:yellow";>.then(function(data) {</span></p>
+    <p style="padding-left: 130px;"><span style="background-color:yellow";>console.log(data);</span></p>
+    <p style="padding-left: 100px;"><span style="background-color:yellow";>})</span></p>
+    <p><span style="background-color:yellow";>}</span></p>
+    </div>
+  </div>
+
+    <h2>4.0 AJAX API Trivia Game</h2>   
+    <p>Below is an interactive trivia game that uses the AJAX XHR object to request information from an open trivia database server : https://opentdb.com/ , and then dynamically changes the HTML DOM elements using javascript in the background without reloading the whole web page. It requests an XHR object from the server which contains all the data for the trivia question to be displayed to the user. Javascript is then used to change the HTML DOM elements to interact with the user dynamically. Try it out by clicking on the green "Click For A Trivia Question" button.</p>
+    <p style="text-align:center; font-size: 1.5em;"><strong>AJAX Trivia Question Game</strong></p>
+    <div style="text-align:center; font-size: 1.5em;"><span id="score" style="background-color:yellow">Score : Correct 0 Wrong 0</span></div>
+    <div id="output"></div>
+    <div id="selAnswers" style="text-align:center; font-size: 1.5em;"></div>
+    <div style="text-align:center;">
+      <button type="button" id="btn">Click For A Trivia Question</button>
+    </div>    
+
+    <h2>5.0 AJAX </h2>
+    <p>Asynchronous Javascript and XML (AJAX) is a technology that allows data to be transferred from the server to the web page in the background without reloading the whole page. It does this by creating an XHR object which requests information from the server, the returned object contains data in JSON format and the required information can be retrieved using the properties method. Javascript can then use the XHR object and its data properties to modify the web page element objects through the HTML DOM manipulation without reloading the whole web page. </p>
+    <p>Originally the data from the XHR object used to be in XML format, however, nowdays it is more common to have it in JSON format which is a format that is very similar to a javascript data structure.  </p>
+
+    <script src="Javascript.js"></script>
+
+    <h2>6.0 Javascript Form Validation</h2>
+    <p>A common task of javascript is to validate input from a user before a form can submit. The examples below show this done in javascript : </p>
+
+  <div class="row">
+  
+    <div class ="col-md-6 col-sm-12" style="text-align: center;">
+      <h3>JavaScript Number Input Validation</h3>
+      <p>Please input a number between 1 and 10:</p>
+      <input id="number">
+      <button class="button1" onclick="myFunction()">Submit</button>
+      <p id="validation"></p>
+    </div>
+
+  <div class ="col-md-6 col-sm-12">
+    <h3 style="padding-left: 0px;">Javascript Name, Email, And Message Validation</h3>
+    <form name ="myForm" action="mailto:21706137@student.uwa.edu.au" onsubmit="return validateForm()" method="post" enctype="text/plain">
+      <label>Your Name</label>
+      <input type="text" name="yourName" value=""><span>Cannot submit with no name </span><br>
+      <label>Your Email :</label>
+      <input type="email" name="yourEmail" value=""><span>Cannot submit with no email and @ character </span><br>
+      <label>Your Message(cannot  submit with no message) :</label><br>
+      <textarea name="yourMessage" id="" cols="40" rows="5"></textarea><br>
+      <input type="submit" name="">
+    </form>
+  </div> 
+
+  </div>  
+
+
+    <h2>7.0 Javascript DOM Methods </h2>
+    <p>Listed below are some common Javascript DOM methods used : </p>
+
+    <div class="table" >
+      <table>
+          <tr>
+              <th style="text-align: center;">Method Description</th>
+              <th style="text-align: center;">Method Syntax</th>                                  
+          <tr>
+          <tr>
+              <td >querySelectorAll() <br> Returns all elements that match a CSS selector <br> Returning all divs inside id selAnswers.   </td>
+              <td><span style="background-color:yellow";>var els = document.querySelectorAll('#selAnswers div');</span> </td>
+          <tr>
+              <td>addEventListener() <br> Most commonly used to detect mouseclicks.   </td>         
+              <td><span style="background-color:yellow";>btn.addEventListener('click', nextItem);</span> </td>       
+          </tr>
+          <tr>
+              <td>appendChild() <br> Adds an element as a child of the element that invokes this method. </td>
+              <td><span style="background-color:yellow";>selAnswer.appendChild(el);</span> </td>
+          </tr>
+          <tr>
+            <td>setAttribute() <br> Adds or updates the attribute value of an element.  </td>
+            <td><span style="background-color:yellow";>el.setAttribute('data-cor',checker);</span> </td>
+        </tr>  
+        <tr>
+          <td>getAttribute() <br> Returns the value of an elements attribute. </td>
+          <td><span style="background-color:yellow";>var res = event.target.getAttribute('data-cor');</span> </td>
+        </tr>
+        <tr>
+          <td>createElement() <br> Creates new HTML element by its tag name </td>
+          <td><span style="background-color:yellow";>var el = document.createElement('div')</span> </td>
+        </tr>     
+      </table>
+    </div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CITS3403 Project #1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+ 
+<body>
+<!--This is a Bootstrap Jumbotron navigator bar with drop down menus that are fully responsive-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="HTML.html">HTML</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="navbar-brand" href="CSS Page.html">CSS<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="Javascript.html">Javascript</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="../index.html" tabindex="-1" aria-disabled="true">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="HTML.html">HTML</a>
+                <a class="dropdown-item" href="CSS Page.html">CSS</a>
+                <a class="dropdown-item" href="Javascript.html">Javascript</a>
+                <a class="dropdown-item" href="../index.html">About Me</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" style="background-color: rgb(133, 202, 245);">
+        <!-- Main jumbotron for the main start section of the project which is HTML section -->
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="display-3">Web Development Progression And History</h1>
+            <p>The start of web development begins with HTML which is short for Hypertext Markup Language(HTML). </p>
+            <p><a class="btn btn-primary btn-lg" href="HTML.html" role="button">Start At HTML First &raquo;</a></p>
+          </div>
+        </div>
+      
+        <div class="container">
+          <!-- Example row of columns for each main section : CSS, JAVASCRIPT, and MY CV of the project-->
+          <div class="row">
+            <div class="col-md-4">
+              <h2>CSS</h2>
+              <p>Following the development of HTML , CSS (cascading style sheets) was developed that improves visual style to HTML files. </p>
+              <p><a class="btn btn-primary btn-lg" href="CSS Page.html" role="button">Go To CSS &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+              <h2>Javascript</h2>
+              <p>Finally Javascript provides client side interaction of websites with users</p>
+              <p><a class="btn btn-primary btn-lg" href="Javascript.html" role="button">Go To Javascript &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+              <h2>About Me</h2>
+              <p>Know More About Me</p>
+              <p><a class="btn btn-primary btn-lg" href="../index.html" role="button">About Me &raquo;</a></p>
+            </div>
+         </div>
+      
+          <hr>           
+          
+        </div> <!-- /container -->   
+      </main>
+
+</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>

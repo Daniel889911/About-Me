@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CITS3403 Project #1</title>
+    <link rel="stylesheet" type="text/css" href="CSS Styles.CSS">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body style="background-color: lightcyan ">
+
+<!--This is a Bootstrap Jumbotron navigator bar with drop down menus that are fully responsive-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">HOME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="navbar-brand" href="CSS Page.html">CSS<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="Javascript.html">Javascript</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../index.html" tabindex="-1" aria-disabled="true">About Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="index.html">HOME</a>
+            <a class="dropdown-item" href="CSS Page.html">CSS</a>
+            <a class="dropdown-item" href="Javascript.html">Javascript</a>
+            <a class="dropdown-item" href="../index.html">About Me</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div style="margin-top: 70px; text-align:center;">    
+<img src="IMAGES/HTML.png" alt="HTML 5 Image" style="width:128px;height:128px;">
+</div>
+
+    <h1 style="text-align:center;">History And Evolution Of Hypertext Markup Language(HTML) </h1>
+
+    <h2>1.0 Purpose</h2>
+    <p >Hypertext Markup Language(HTML) is used to create and display web pages. It markups the data presented on a webpage by using tags which describes its purpose, appearance, and organisation within the webpage. The browsers request web pages using the HTTP networking protocol. It then receives, reads and interprets the HTML file containing HTML markup language and renders them as multimedia web pages.   </p>
+    <p >HTML is enhanced by incorporating scripting languages like <a class="navbar-brand" href="Javascript.html">javascript</a>to affect the way the web page behaves and functions and also a styling language named <a class="navbar-brand" href="/CSS Page.html">cascading style sheets(CSS)</a> that enhances the look and design of the web page. </p>
+
+    <h2>2.0 History</h2>
+    <p >HTML was created by physicist Tim Berners-Lee, a contractor at the European Organisation For Nuclear Research (CERN) in 1980 and he was later joined by CERN data systems engineer Robert Cailiau to further develop this technology. The table below shows the evolution of HTML to the current version HTML 5 : </p>
+    <p style="text-align:center;" ><strong>HTML Version History Table</strong>  </p>
+
+<!--This is a table in HTML which has an unordered list of list items inside of it-->
+    <div class="table">
+        <table >
+            <tr>
+            <th style="text-align: center;">HTML Version Number</th>
+            <th style="text-align: center;vertical-align: middle;">Features</th>                                  
+            </tr>
+            <tr>
+            <td style="text-align: center;">HTML 1.0 <br>1993</td>
+            <td>
+                <ul>
+                    <li>
+                        Very limited with only 20 elements, could not change page background, use fonts and tables and forms
+                    </li>
+                </ul>
+            </td>
+            </tr>
+            <tr>
+            <td style="text-align: center;">HTML 2.0 <br>1995</td>
+            <td>
+                <ul>
+                    <li>
+                        First official set of standards for HTML set by W3C
+                    </li>
+                    <li>
+                        Added ability to change page background, text colour, and use tables
+                    </li>
+                    <li>
+                        W3C(The World Wide Web Consortium) was formed to regulate web standards including HTML 2.0
+                    </li>
+                    <li>
+                        Browsers start to support HTML 2.0
+                    </li>
+                </ul>
+            </td>
+            </tr>
+            <tr>
+            <td style="text-align: center;">HTML 3.2 <br>1997</td>
+            <td>
+                <ul>
+                    <li>
+                        Included tables, applets, text flow around images, subscripts, and superscripts
+                    </li>
+                    <li>
+                        Supported and approved by Netscape and Microsoft browsers
+                    </li>
+                </ul>
+            </td>
+            </tr>
+            <tr>
+            <td style="text-align: center;">HTML 4.01 <br>1999</td>
+            <td>
+                <ul>
+                    <li>
+                        Introduction of cascading style sheets(CSS) allowing separation of structure to design elements 
+                    </li>
+                    <li>
+                        Provided variations of font, text, colour, and background clearly
+                    </li>
+                    <li>
+                        Allowed CSS to be added in a separate file splitting the code for the structure of the web page from its design and style
+                    </li>
+                </ul>
+            </td>
+            </tr>   
+            <tr>
+            <td style="text-align: center;">HTML 5.0 <br>2014</td>
+            <td>
+                <ul>
+                    <li>
+                        Added physical location to web sites
+                    </li>
+                    <li>
+                        Ability to work even when not connected to the internet
+                    </li>
+                    <li>
+                        Capacity to provide high definition video and graphics
+                    </li>
+                    <li>
+                        Supported by all main browsers : Chrome, Safari, Edge, Firefox, and Opera
+                    </li>
+                </ul>
+            </td>
+            </tr>          
+        </table>
+    </div>
+
+    <h2>3.0 Elements And Tags</h2>
+    <p>An HTML file consists of elements which are distinguished from each other by using tags that informs the browser of the structure, format, and display of the web page. The elements can be structured in a nested hierarchical format. Tags come in pairs with a starting tag and an ending tag.</p> 
+    <p>Below are shown several tags in HTML that are used for this projects web pages :</p>
+
+    <div class="table" >
+        <table>
+            <tr>
+                <th style="text-align: center;">Tag Description</th>
+                <th style="text-align: center;">Tag Syntax</th>                                  
+            <tr>
+            <tr>
+                <td style="text-align: center;">header h2 tag</td>
+                <td style="text-align: center;"><span style="background-color:yellow";>&#60;h2>Elements And Tags&#60;/h2></span> </td>
+            <tr>
+                <td style="text-align: center;">button1 element & class tags</td>
+                <td style="text-align: center;"><span style="background-color:yellow";>&#60;button class="button1">Hover Over This Button&#60;/button></span> </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">btn element & id tags</td>
+                <td style="text-align: center;"><span style="background-color:yellow";> &#60;button type="button" id="btn">Click For A Trivia Question&#60;/button></span> </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Table heading tag for this table</td>
+                <td style="text-align: center;"><span style="background-color:yellow";> &#60;th style="text-align: center;">Tag Syntax&#60;/th></span> </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Image tag for DOM image</td>
+                <td style="text-align: center;"><span style="background-color:yellow";> &#60;img src="/IMAGES/DOM.png" alt="DOM Image" class="center2" ></span> </td>
+            </tr>     
+        </table>
+    </div>
+
+    <h2>4.0 Main HTML Elements</h2>
+        <p><strong>Block elements</strong> take up a new line and uses the full width of the web page, it has a rectangular structure and does not allow any other element to occupy the same horizontal space it is on.</p>    
+        <p>An Example is a div with code : <span style="background-color:yellow";>&#60;div>          &#60;/div></span></p>
+        <p id="divElement" style="text-align:center;">This is a div element, hover over me to observe my div space.</p>
+
+        <p><strong>Inline elements</strong> must be entirely inside block level elements and only occupy the space they are bounded by their tags.</p>
+        <p>An example is a span with code : <span style="background-color:yellow";>&#60;span>          &#60;/span></span></p>
+        <p style="text-align:center;">
+            <span id="spanElement"> This is a span element, hover over me to observe my span space. </span>
+        </p>
+
+    <h2> 5.0 Various Miscelanious Elements</h2>
+        <p>HTML provides basic attributes such as font size, alignment, coloring, etc. and it also provides many other useful web page objects such as buttons, emojis, symbols, etc. some which are shown below : </p>
+        <p style="text-align:center;"><span style="background-color:yellow";>&#60;button class="button1">Hover Over This Button&#60;/button></span> </p>
+        <p style="text-align:center;"><strong>Buttons</strong>
+        <button class="button1">Hover Over This Button</button>
+        </p>
+        <p style="text-align:center;"><span style="background-color:yellow";>&#60;input type="email" name=Email Submission></span> </p>
+        <p style="text-align:center;"><strong>Email Submission</strong>
+            <input type="email" name=Email Submission> 
+        </p>
+
+    <h2>6.0 The Document Object Model(DOM)</h2>
+    <p>An HTML element is a type of HTML node and can be represented in a tree structure. The HTML file is parsed by the browser and stored in a tree data structure as the Document Object Model(DOM) that is an API for javascript. The HTML elements or nodes contain objects and javascript uses the DOM API to manipulate the objects on the fly without the need to reload the web page.</p>
+    <P>The diagram below shows the tree hierarchical structure of the DOM from the <a class="navbar-brand" href="https://www.w3schools.com/js/js_htmldom.asp">W3C website</a> :</P>
+    <div>
+        <img src="IMAGES/DOM.png" alt="DOM Image" class="center2" >
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>

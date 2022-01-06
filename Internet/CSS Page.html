@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CITS3403 Project #1</title>
+    
+    <link rel="stylesheet" type="text/css" href="CSS Styles.CSS">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body style="background-color: lightcyan ">
+
+<!--This is a Bootstrap Jumbotron navigator bar with drop down menus that are fully responsive-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">HOME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="navbar-brand" href="HTML.html">HTML<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="Javascript.html">Javascript</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../index.html" tabindex="-1" aria-disabled="true">About Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="index.html">HOME</a>
+            <a class="dropdown-item" href="HTML.html">HTML</a>
+            <a class="dropdown-item" href="Javascript.html">Javascript</a>
+            <a class="dropdown-item" href="../index.html">About Me</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div style="margin-top: 70px; text-align:center;">    
+    <img src="IMAGES/CSS.png" alt="CSS 3 Image" style="width:128px;height:128px;">
+  </div>
+
+  <h1 style="text-align:center;">Purpose And Motivation Of CSS</h1>
+  
+  <h2>1.0 CSS History</h2>
+  <p> Cascading Style Sheets is used to describe and separate the design, style, and presentation aspects from the structure and organisation of an <a class="navbar-brand" href="/HTML.html">HTML</a>web page. The CSS code can be stored in a separate external file or embedded in the <a class="navbar-brand" href="/HTML.html">HTML</a>document.  </p>
+  <p>CSS started development in October 1994 by Hakon Wium Lie who was working at European Organisation For Nuclear Research(CERN). Several other proposals for style sheet languages existed during that time including one developed by Bert Bos who is also attributed to be a major contributor for CSS. Lie and Bos then worked together to produce the first official CSS language which was published and finalised in December 1996. Adoption of the CSS language has since progressed through the years to it’s current CSS version 3/4 today. Below is a table which shows the progression of CSS through the years.  </p>
+
+    <p style="text-align:center;" ><strong>CSS Version History Table</strong>  </p>
+
+<!--This is a table in CSS which has an unordered list of list items inside of it-->
+<div class="table">
+  <table >
+      <tr>
+      <th style="text-align: center;">CSS Version Number</th>
+      <th style="text-align: center;vertical-align: middle;">Features</th>                                  
+      </tr>
+      <tr>
+      <td style="text-align: center;">CSS 1 <br>1996</td>
+      <td>
+          <ul>
+              <li>
+                  Support for margin, border, padding, positioning of elements
+              </li>
+              <li>
+                  Font typeface, emphasis, font color, background color
+              </li>
+              <li>
+                  Alignment of text, images, tables, and other elements
+              </li>
+              <li>
+                This version is no longer recommended by W3C
+            </li>
+          </ul>
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">CSS 2 <br>1998</td>
+      <td>
+          <ul>              
+              <li>
+                  Absolute, relative, and fixed positioning of elements and new font property of shadows
+              </li>
+              <li>
+                This version is no longer recommended by W3C
+              </li>
+          </ul>
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">CSS 3 <br>1999-Current</td>
+      <td>
+          <ul>
+              <li>
+                  CSS 3 has divided into separate modules that define certain specification features which have been gradually added over time.
+              </li>
+              <li>
+                  The full list of module specifications being added to CSS 3 is provided in summary in this <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#History">Wikipedia link</a>.
+              </li>
+          </ul>
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">CSS 4 <br>Current</td>
+      <td>
+          <ul>
+              <li>
+                  Since CSS 3 the specifications have been split into modules each growing independantly from each other so there is no longer any single CSS 4 specification. 
+              </li>                         
+          </ul>
+      </td>
+      </tr>   
+      
+  </table>
+</div>
+
+    
+    <h2>2.0 Advantages</h2>
+    <h3>2.1 Reduces Repetition And Complexity </h3>
+    <p>Prior to CSS all style designs were included in the HTML code which can make it bloated and the same style design had to be repeated in HTML. CSS improves flexibility and control of the design and style elements of the webpage by using a separate external style sheet. It enables specified designs and styles to be reused throughout web pages and also changed easily from a single location of code reducing code in the HTML. Changes to the CSS global style sheet can affect multiple HTML web pages globally, reducing complexity and repetition.  </p>
+    <h3>2.2 Reduces Network Bandwidth</h3>
+    <p>By using an external stylesheet this reduces the file size of the HTML document and improves network bandwidth efficiency as the external CSS file is usually stored in the browser cache, which can reduce network packet transfers on multiple HTML files as it reduces the size of HTML web pages being loaded.</p>
+    <h3>2.3 Enhances Search Engine Access </h3>
+    <p>With CSS the code for design and style can be separated into an external .CSS file which frees up the HTML file of excessive code and more of pure content and this enables search engines to crawl through the website more easily and promotes the accessibility of the search engine to rank the website which is critical to the success of most websites.</p>
+    <h3>2.4 Responsive Design</h3>
+    <p>Websites are able to be viewed across a lot of different types of devices and media ranging from desktop computers, laptops, tablets, Ipads, and mobile devices. CSS enables tailoring of the same HTML content to be displayed differently on different devices maximising the presentation of the content on a particular device. For example the content of this web page is also tailored to medium and small devices using : <span style="background-color:yellow">&#60;div class ="col-md-6 col-sm-12">&#60;/div>  </span></p>
+    <h3>2.5 Frameworks And Libraries</h3>
+    <p>Several frameworks and libraries of pre-made CSS classes are available which speeds up the process of web development. The most common frameworks include : Bootstrap,Foundation, Blueprint, Cascade Framework, and Materialize. These provide professionally ready made designs and styles that can be incorporated into web pages and if required the developer can over write and modify the standard library styles to make them unique to their web page. </p>
+
+    <h2>3.0 Bootstrap</h2>
+    <p>Bootstrap is a free and open source CSS framework, it provides design templates for popular web page elements such as typography, navigation, forms, buttons, and other common features. It consists of CSS code and may also include some javascript to provide extra functionality. The main advantage of Bootstrap is its support for responsive designs that caters to smaller screen devices such as mobile phones and tablets. Its popularity has increased due to this responsive design feature. This web page uses a Bootstrap component called Jumbotron. </p>
+ 
+    <h2>4.0 CSS Box Model </h2>
+    <p>The CSS box model describes a model where each HTML element has a rectangular shape and within this shape there are spacing boundaries that can be modified through CSS. Shown in the diagram below from <a class="navbar-brand" href="https://www.w3schools.com/css/css_boxmodel.asp">W3C website</a> : </p>
+
+      <img src="IMAGES/BoxModel.png" alt="CSS 3 Image" class="center1">
+
+    <p><strong> Content </strong>  : Text and images are in this area.</p>
+    <p><strong>Padding </strong>: Spacing around the content area, default setting is transparent.</p>
+    <p><strong>Border</strong> : The area where a border line can be placed outside the padding.</p>
+    <p><strong>Margin</strong> : Spacing outside of the border area.</p>
+
+    
+    <h2>5.0 CSS Syntax</h2>
+    <h3>5.1 Properties And Values</h3>
+    <p>The CSS main syntax consists of a property which describes the named feature to be modified and a value of the property by which amount to change it to(Image from <a class="navbar-brand" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax">Mozilla developer website</a>).</p>
+    <img src="IMAGES/CSS Syntax.png" alt="CSS Syntax" class="center3">
+
+    <h3>5.2 Selectors</h3>
+    <p>CSS uses selectors to identify what tags and attributes to apply its style designs to. The selector can be applied in several ways as below : </p>
+
+  <div class="table" >
+      <table>
+          <tr>
+              <th style="text-align: center;">Selector Description</th>
+              <th style="text-align: center;">Selector Syntax</th>                                  
+          <tr>
+          <tr>
+              <td>Elements of a specific type, for example all h1 headers :</td>
+              <td style="padding-left: 50px;"><span style="background-color:yellow";>h1 {font-size:150%;}</span> </td>
+          <tr>
+              <td style="vertical-align: middle;" >Elements of a particular attribute for example : 
+                  <ul>
+                    <li>
+                      <span>Element with id btn</span> 
+                    </li>
+                    <li>
+                      <span>Elements with class button1</span>
+                    </li>
+                </ul>
+                      
+              <td>
+                <ul> <br>
+                  <li>
+                    <span style="background-color:yellow";>br #btn { background-color:green;}</span> 
+                  </li>
+                  <li>
+                    <span style="background-color:yellow";>.button1 { text-align:right;}</span>
+                  </li>
+              </ul>
+              </td>
+          </tr>
+          <tr>
+              <td >Selector application will also use the DOM and <br>its  hierarchical  structure to determine how <br>elements are affected by application of design <br>styles. E.g. All children of h1 headers will have purple font color</td>
+              <td style="padding-left: 50px;"><span style="background-color:yellow";> h1 {color:purple;} <br> &#60;h1>  This is to &#60;em>illustrate&#60;/em> inheritance &#60;/h1></span> </td>
+          </tr>    
+          </tr>
+      </table>
+    </div>
+
+
+    <h3>5.3 Inheritance</h3>
+    <p>CSS applies the concept of inheritance whereby descendent elements can inherit CSS properties from their ancestors. The XHTML elements on a web page are parsed by the browser forming a document tree data structure which determine the hierarchy of elements on the web page.</p>
+    <h3>5.4 Priority</h3>
+    <p> CSS uses a priority scheme where CSS statements of higher priority are affected first and if not specified then it flows down the priority list to find statements that identify the CSS style, this process of traversing down the priority list to determine what style affects are enacted is called ‘cascading’. Below is a table which shows how CSS priorities are structured from highest to lowest : </p>
+    <div class="table" >
+      <table style="text-align: center;">
+          <tr >
+              <th >CSS Priority Level</th>
+              <th style="vertical-align: middle;">Description</th>                                  
+          <tr>
+          <tr>
+              <td>Inline CSS</td>
+              <td >Highest Priority : Placed within the HTML tag using a style attribute</td>
+          <tr>
+              <td >Internal CSS</td>         
+              <td >2nd Highest Priority : The HTML elements or CSS selectors tags are provided style attributes that are declared in the head section of the HTML file</td>       
+          </tr>
+          <tr>
+              <td >External CSS</td>
+              <td>Lowest Priority : The element tags and CSS selectors are placed outside the HTML file in a separte CSS styles file which is linked in the HTML document using a link tag.</td>
+          </tr>           
+      </table>
+    </div>
+    <h3>5.5 Pseudo Classes</h3>
+    <p >CSS uses pseudo classes to detect changes in the state of an element when a user interacts with it for example detect when the user hovers a mouse over an element or clicks on an element.   </p>
+ 
+    <div style="text-align:center;">
+      <p>Example of pseudo class that detects a mouse hover and changes color from green to red.</p>
+      <button class="button1">Hover Over To Change Colour</button>
+    </div>
+   
+    <h2>6.0 Style Attributes </h2>
+    <p>The most common style attributes are listed below : </p>
+    <div class="table" >
+      <table>
+          <tr>
+              <th style="text-align: center;">Style Attribute</th>
+              <th style="text-align: center;">Style Attribute Syntax</th>                                  
+          <tr>
+          <tr>
+              <td style="text-align: center;">Defines background color to green</td>
+              <td style="padding-left: 50px;"><span style="background-color:yellow";>background-color:green;</span> </td>
+          <tr>
+              <td style="text-align: center;" >Defines font size to 16 pixels</td>         
+              <td style="padding-left: 50px;"><span style="background-color:yellow";>font-size:16px;</span> </td>       
+          </tr>
+          <tr>
+              <td style="text-align: center;" >Defines left padding to 50 pixels</td>
+              <td style="padding-left: 50px;"><span style="background-color:yellow";>padding-left:50px;</span> </td>
+          </tr>
+          <tr>
+            <td style="text-align: center;" >Aligns text to center</td>
+            <td style="padding-left: 50px;"><span style="background-color:yellow";>text-align: center;</span> </td>
+        </tr>  
+        <tr>
+          <td style="text-align: center;" >Sets width to 25% and for screens <br> smaller than 601 pixels it resizes to 100%</td>
+          <td style="padding-left: 50px;"><span style="background-color:yellow";>width: 25%;</span> </td>
+      </tr>    
+      </table>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,108 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    font-size:140%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+p, h2, h3 {
+    font-size:150%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.button1 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1:hover { background-color:firebrick;}
+
+#divElement:hover { background-color : yellow; }
+#spanElement:hover { background-color : yellow; }
+
+#selAnswers div{
+    border: 1px solid black;
+    font-size: 1.5em;
+    padding:10px;
+    margin:5px;
+    display: inline-block;
+    background-color:rgb(108, 191, 224);
+}
+.cat  {
+    font-size: 1.5em;
+    text-align: center;
+    color: purple;
+}
+
+.que  {
+    font-size: 1.5em;
+    text-align: center;
+    color: blue;
+}
+
+#btn {
+  background-color: green;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: right;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.center1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-bottom: 30px;
+}
